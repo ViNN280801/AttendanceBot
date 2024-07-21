@@ -2,3 +2,5 @@ transitions
 graphviz
 matplotlib
 numpy
+pgmpy
+torch
