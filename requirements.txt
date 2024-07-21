@@ -1,0 +1,4 @@
+transitions
+graphviz
+matplotlib
+numpy
