@@ -1,10 +1,13 @@
-# Finite State Machine preparation files
-attendance_bot_fsm
-state_diagram
-
 # Visual Studio & Visual Studio Code files
 .vs/
 .vscode/
 
 # Python cache files
 __pycache__
+
+# Finite State Machine preparation files
+attendance_bot_fsm
+state_diagram
+
+# Simulation results
+
