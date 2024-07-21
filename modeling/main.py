@@ -1,4 +1,5 @@
 from attendance_bot_fsm import AttendanceBotFSM
+from attendance_bayesian_network import AttendanceBayesianNetwork
 from monte_carlo_simulator import MonteCarloSimulator, plt
 
 # Create FSM and run simulation
@@ -71,3 +72,9 @@ with open("simulation_results.txt", "a") as f:
     f.write("\nUser Actions Percentages:\n")
     for action, percentage in action_percentages.items():
         f.write(f"{action}: {percentage:.2f}%\n")
+
+bn_model = AttendanceBayesianNetwork()
+bn_model.display_cpds()
+evidence = {"Register": 1, "Check_in": 1}
+result = bn_model.perform_inference(evidence)
+print(result)
